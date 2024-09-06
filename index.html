@@ -1,330 +1,107 @@
-<!DOCTYPE html><html><head><base href="https://www.michaeltaxi.co.il/">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>מיכאל בן ארה - נהג מונית במודיעין</title>
-<meta name="description" content="מיכאל בן ארה, נהג מונית מקצועי ואמין במודיעין. הזמינו נסיעה עכשיו!">
-<meta name="keywords" content="נהג מונית, מודיעין, הסעות, מונית, תחבורה">
-<meta name="author" content="מיכאל בן ארה">
-<meta name="robots" content="index, follow">
-<meta property="og:title" content="מיכאל בן ארה - נהג מונית במודיעין">
-<meta property="og:description" content="שירותי מונית אמינים ומקצועיים במודיעין והסביבה">
-<meta property="og:image" content="https://www.michaeltaxi.co.il/taxi-image.jpg">
-<meta property="og:url" content="https://www.michaeltaxi.co.il">
-<meta name="twitter:card" content="summary_large_image">
-<link rel="canonical" href="https://www.michaeltaxi.co.il">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "מיכאל בן ארה - נהג מונית במודיעין",
-  "image": "https://www.michaeltaxi.co.il/taxi-image.jpg",
-  "telephone": "+9720508387674",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "מודיעין",
-    "addressCountry": "IL"
-  },
-  "url": "https://www.michaeltaxi.co.il",
-  "priceRange": "$$",
-  "description": "שירותי מונית אמינים ומקצועיים במודיעין והסביבה"
-}
-</script>
-
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700&display=swap');
-  
-  :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-    --primary: 221.2 83.2% 53.3%;
-    --primary-foreground: 210 40% 98%;
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 221.2 83.2% 53.3%;
-    --radius: 0.5rem;
-  }
-
-  .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-    --primary: 217.2 91.2% 59.8%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 224.3 76.3% 48%;
-  }
-
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  html {
-    font-family: 'Heebo', sans-serif;
-    direction: rtl;
-  }
-
-  body {
-    background-color: hsl(var(--background));
-    color: hsl(var(--foreground));
-    line-height: 1.5;
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
-
-  .container {
-    max-width: 100%;
-    padding: 1rem;
-    text-align: center;
-  }
-
-  header {
-    background-color: hsl(var(--primary));
-    color: hsl(var(--primary-foreground));
-    padding: 1rem;
-    text-align: center;
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
-
-  h1 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-  }
-
-  nav {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 1rem;
-  }
-
-  nav a {
-    color: hsl(var(--primary-foreground));
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-  }
-
-  main {
-    padding: 2rem 0;
-  }
-
-  section {
-    margin-bottom: 2rem;
-  }
-
-  h2 {
-    font-size: 1.25rem;
-    margin-bottom: 1rem;
-    color: hsl(var(--primary));
-    transition: color 0.3s ease;
-  }
-
-  .contact-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-  }
-
-  .contact-item {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-  }
-
-  .icon {
-    width: 24px;
-    height: 24px;
-    fill: hsl(var(--primary));
-    transition: fill 0.3s ease;
-  }
-
-  .cta-button {
-    display: inline-block;
-    background-color: hsl(var(--primary));
-    color: hsl(var(--primary-foreground));
-    padding: 0.5rem 1rem;
-    border-radius: var(--radius);
-    text-decoration: none;
-    font-weight: bold;
-    margin-top: 1rem;
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
-
-  footer {
-    background-color: hsl(var(--muted));
-    color: hsl(var(--muted-foreground));
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
-
-  .dark-mode-toggle {
-    position: fixed;
-    top: 1rem;
-    left: 1rem;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 0.5rem;
-    border-radius: 50%;
-    transition: background-color 0.3s ease;
-  }
-
-  .dark-mode-toggle:hover {
-    background-color: hsl(var(--muted));
-  }
-
-  .dark-mode-toggle svg {
-    width: 24px;
-    height: 24px;
-    stroke: hsl(var(--foreground));
-    transition: stroke 0.3s ease;
-  }
-
-  @media (min-width: 768px) {
-    .container {
-      max-width: 768px;
-      margin: 0 auto;
-    }
-
-    h1 {
-      font-size: 2rem;
-    }
-
-    h2 {
-      font-size: 1.5rem;
-    }
-  }
-
-  @media (min-width: 1024px) {
-    .container {
-      max-width: 1024px;
-    }
-
-    main {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 2rem;
-    }
-  }
-</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISRA.TAXI - Coming Soon</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.3.0/alpine.js" integrity="sha512-nIwdJlD5/vHj23CbO2iHCXtsqzdTTx3e3uAmpTm4x2Y8xCIFyWu4cSIV8GaGe2UNVq86/1h9EgUZy7tn243qdA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+        [x-cloak] { display: none; }
+    </style>
 </head>
-<body>
-  <header>
-    <div class="container">
-      <h1>מיכאל בן ארה - נהג מונית במודיעין</h1>
-      <nav>
-        <a href="#about">אודות</a>
-        <a href="#services">שירותים</a>
-        <a href="#contact">צור קשר</a>
-      </nav>
+<body x-data="{ darkMode: false }" :class="{ 'dark': darkMode }">
+    <div class="min-h-screen bg-white dark:bg-gray-900 flex flex-col justify-between">
+        <main class="container mx-auto px-4 py-16 flex-grow flex flex-col items-center justify-center text-center">
+            <h1 class="text-4xl font-bold mb-4 text-gray-900 dark:text-white">ISRA.TAXI</h1>
+            <p class="text-xl mb-8 text-gray-700 dark:text-gray-300">Our SaaS web app is coming soon. Join the waitlist!</p>
+            
+            <div class="flex w-full max-w-sm items-center space-x-2">
+                <input type="email" placeholder="Enter your email" class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50">
+                <button class="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2">
+                    Join Waitlist
+                </button>
+            </div>
+        </main>
+
+        <footer class="bg-gray-100 dark:bg-gray-800 py-8">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <div class="text-gray-600 dark:text-gray-400 mb-4 md:mb-0">
+                        © 2024 ISRA.TAXI. All rights reserved.
+                    </div>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg>
+                        </a>
+                        <a href="#" class="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                        </a>
+                        <a href="#" class="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <button
+            @click="darkMode = !darkMode"
+            class="fixed bottom-4 right-4 inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 w-10"
+        >
+            <svg x-show="!darkMode" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-[1.2rem] h-[1.2rem]"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg>
+            <svg x-show="darkMode" x-cloak xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-[1.2rem] h-[1.2rem]"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></svg>
+        </button>
     </div>
-  </header>
 
-  <main class="container" style="text-align: center;">
-  <section id="about">
-    <h2>אודות</h2>
-    <p>שלום, אני מיכאל בן ארה, נהג מונית מקצועי ואמין במודיעין. אני מספק שירותי הסעות איכותיים ונוחים לכל יעד בעיר ומחוצה לה.</p>
-  </section>
-
-  <section id="services">
-    <h2>שירותים</h2>
-    <ul style="list-style-type: none; padding: 0;">
-      <li>נסיעות בתוך העיר מודיעין</li>
-      <li>הסעות לנתב"ג וממנו</li>
-      <li>נסיעות בין-עירוניות</li>
-      <li>שירות 24/7</li>
-      <li>מחירים הוגנים ותחרותיים</li>
-    </ul>
-  </section>
-
-  <section id="contact">
-    <h2>צור קשר</h2>
-    <div class="contact-info">
-      <div class="contact-item">
-        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.15 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"></path></svg>
-        <span>טלפון: <a href="tel:+9720508387674">050-838-7674</a></span>
-      </div>
-      <div class="contact-item">
-        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"></path></svg>
-        <span>אימייל: <a href="mailto:michael@taxi-modiin.co.il">michael@taxi-modiin.co.il</a></span>
-      </div>
-    </div>
-    <a href="https://wa.me/9720508387674?text=היי%20מיכאל%20מה%20שלומך%3F%2C%20פנוי%20לנסיעה%20ממודיעין%3F" class="cta-button">שלח הודעה בוואטסאפ</a>
-  </section>
-
-  <button id="darkModeToggle" class="dark-mode-toggle">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-    </svg>
-  </button>
-</main>
-
-  <footer>
-    <div class="container">
-      <p>© 2023 מיכאל בן ארה - נהג מונית במודיעין. כל הזכויות שמורות.</p>
-    </div>
-  </footer>
-
-  <script>
-  // Add smooth scrolling for anchor links
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-      e.preventDefault();
-      document.querySelector(this.getAttribute('href')).scrollIntoView({
-        behavior: 'smooth'
-      });
-    });
-  });
-
-  // Toggle dark mode
-  const darkModeToggle = document.getElementById('darkModeToggle');
-  const body = document.body;
-
-  // Set default to dark mode
-  body.classList.add('dark');
-
-  function toggleDarkMode() {
-    body.classList.toggle('dark');
-    localStorage.setItem('darkMode', body.classList.contains('dark'));
-  }
-
-  darkModeToggle.addEventListener('click', toggleDarkMode);
-
-  // Check for saved dark mode preference
-  const savedDarkMode = localStorage.getItem('darkMode');
-  if (savedDarkMode === 'true') {
-    body.classList.add('dark');
-  } else if (savedDarkMode === 'false') {
-    body.classList.remove('dark');
-  }
-</script>
-
-</body></html>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        border: "hsl(var(--border))",
+                        input: "hsl(var(--input))",
+                        ring: "hsl(var(--ring))",
+                        background: "hsl(var(--background))",
+                        foreground: "hsl(var(--foreground))",
+                        primary: {
+                            DEFAULT: "hsl(var(--primary))",
+                            foreground: "hsl(var(--primary-foreground))",
+                        },
+                        secondary: {
+                            DEFAULT: "hsl(var(--secondary))",
+                            foreground: "hsl(var(--secondary-foreground))",
+                        },
+                        destructive: {
+                            DEFAULT: "hsl(var(--destructive))",
+                            foreground: "hsl(var(--destructive-foreground))",
+                        },
+                        muted: {
+                            DEFAULT: "hsl(var(--muted))",
+                            foreground: "hsl(var(--muted-foreground))",
+                        },
+                        accent: {
+                            DEFAULT: "hsl(var(--accent))",
+                            foreground: "hsl(var(--accent-foreground))",
+                        },
+                        popover: {
+                            DEFAULT: "hsl(var(--popover))",
+                            foreground: "hsl(var(--popover-foreground))",
+                        },
+                        card: {
+                            DEFAULT: "hsl(var(--card))",
+                            foreground: "hsl(var(--card-foreground))",
+                        },
+                    },
+                    borderRadius: {
+                        lg: "var(--radius)",
+                        md: "calc(var(--radius) - 2px)",
+                        sm: "calc(var(--radius) - 4px)",
+                    },
+                },
+            },
+        }
+    </script>
+</body>
+</html>
